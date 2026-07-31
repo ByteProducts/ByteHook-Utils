@@ -1,0 +1,8 @@
+# Folder
+node_modules/
+dist/
+
+# Files
+package-lock.json
+sourcemap.json
+roblox.yml

@@ -1,0 +1,7 @@
+{
+    "luau-lsp.types.definitionFiles": {
+        "Obsidian": "https://raw.githubusercontent.com/Biraru/Obsidian/refs/heads/fork/Library.d.luau",
+        "luArmor": "https://raw.githubusercontent.com/Biraru/LuauLSP-Definitions/refs/heads/main/luArmor.d.luau",
+        "sUNC": "https://raw.githubusercontent.com/Biraru/LuauLSP-Definitions/refs/heads/main/sUNC.d.luau"
+    }
+}
