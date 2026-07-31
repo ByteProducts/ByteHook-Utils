@@ -4,26 +4,26 @@ local VIRTUALIZE_LOADSTRING = loadstring([[
 VIRTUALIZE_LOADSTRING()
 
 return LPH_NO_VIRTUALIZE(function()
-    local Logger = {
-        Name = "Project ByteHook",
-        Debug = true,
-    }
+	local Logger = {
+		Name = "Project ByteHook",
+		Debug = true,
+	}
 
-    function Logger.Print(...): ()
-        print(`[{Logger.Name}]: {...}`)
-    end
+	function Logger.Print(...): ()
+		print(`[{Logger.Name}]: {...}`)
+	end
 
-    function Logger.Warn(...): ()
-        warn(`[{Logger.Name}]: {...}`)
-    end
+	function Logger.Warn(...): ()
+		warn(`[{Logger.Name}]: {...}`)
+	end
 
-    function Logger.Error(...): ()
-        error(`[{Logger.Name}]: {...}`)
-    end
+	function Logger.Error(...): ()
+		error(`[{Logger.Name}]: {...}`)
+	end
 
-    function Logger.DebugPrint(...): ()
-        print(`[{Logger.Name}{Logger.Debug and " [DEBUG]"}]: {...}`)
-    end
+	function Logger.DebugPrint(...): ()
+		print(`[{Logger.Name}{Logger.Debug and " [DEBUG]"}]: {...}`)
+	end
 
-    return Logger
+	return Logger
 end)()
