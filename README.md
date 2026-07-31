@@ -11,11 +11,11 @@
 ### Setup
 
 1. Fork & clone the repository
-3. Install tools via rokit:
+2. Install tools via rokit:
     ```ps1
     rokit install
     ```
-5. Start developing!
+3. Start developing!
 
 ## Linting
 
