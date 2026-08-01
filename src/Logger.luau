@@ -6,7 +6,7 @@ VIRTUALIZE_LOADSTRING()
 return LPH_NO_VIRTUALIZE(function()
 	local Logger = {
 		Name = "Project ByteHook",
-		Debug = true,
+		Debug = false,
 	}
 
 	function Logger.Print(...): ()
