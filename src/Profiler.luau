@@ -12,8 +12,8 @@ return LPH_NO_VIRTUALIZE(function()
 	-- TODO: fix this breaking on yielding functions
 	function Profiler.Run(label: string, functionToProfile, ...: any): any
 		local isOkayToRun = getgenv()
-			and typeof(getgenv().ProjectByteHook) == "table"
-			and not getgenv().ProjectByteHook.Silent
+			and typeof(getgenv().ByteHook) == "table"
+			and not getgenv().ByteHook.Silent
 
 		if isOkayToRun then
 			debug.profilebegin(label)
