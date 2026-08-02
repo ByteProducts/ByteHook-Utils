@@ -6,7 +6,6 @@ VIRTUALIZE_LOADSTRING()
 return LPH_NO_VIRTUALIZE(function()
 	local Logger = {
 		Name = "Project ByteHook",
-		Debug = false,
 	}
 
 	function Logger.Print(...): ()
@@ -22,7 +21,7 @@ return LPH_NO_VIRTUALIZE(function()
 	end
 
 	function Logger.DebugPrint(...): ()
-		print(`[{Logger.Name}{Logger.Debug and " [DEBUG]"}]: {...}`)
+		print(`[{Logger.Name}][DEBUG]: {...}`)
 	end
 
 	return Logger
